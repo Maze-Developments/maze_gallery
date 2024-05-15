@@ -185,4 +185,13 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+
+    /**
+     * Environments
+     */
+
+    'company_name' => env('COMPANY_NAME', 'Mazedev'),
+
+    'company_url' => env('COMPANY_URL', 'https://mazedeve.com'),
+
 ];

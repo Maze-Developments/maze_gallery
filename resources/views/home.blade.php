@@ -45,7 +45,7 @@
                         <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
                             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                                 <li class="active"><a href="#">Gallery</a></li>
-                                <li><a href="{{ route('upload ') }}">Upload</a></li>
+                                <li><a href="{{ route('upload') }}">Upload</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </nav>
@@ -87,8 +87,8 @@
                     Copyright &copy;
                     <script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved by <a href="https://mazedeve.com"
-                        target="_blank">Mazedev</a>
+                    </script> All rights reserved by <a href="{{ Config::get('app.company_url'); }}"
+                        target="_blank">{{ Config::get('app.company_name'); }}</a>
                 </p>
             </div>
         </div>

@@ -123,8 +123,8 @@
                     Copyright &copy;
                     <script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved by <a href="https://mazedeve.com"
-                        target="_blank">Mazedev</a>
+                    </script> All rights reserved by <a href="{{ Config::get('app.company_url'); }}"
+                        target="_blank">{{ Config::get('app.company_name'); }}</a>
                 </p>
             </div>
         </div>
