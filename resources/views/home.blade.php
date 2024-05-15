@@ -65,6 +65,14 @@
                     </div>
                 </div>
                 <div class="row" id="lightgallery">
+                    @if ($gallery->isEmpty())
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade"
+                            data-src="{{ asset("img/nature_small_8.jpg") }}"
+                            data-sub-html="<h4>Timild $ Wozzy</h4><p>setting('site.title') }}</p>">
+                            <a href="#"><img src="{{ asset("img/nature_small_8.jpg") }}" alt="IMage"
+                            class="img-fluid"></a>
+                        </div>
+                    @endif
                     @foreach ($gallery as $photo)
                         @php
                             $images = json_decode($photo->images);
